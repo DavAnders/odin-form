@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="form.js" defer></script>
   </head>
   <body>
     <div class="left">
@@ -46,7 +47,7 @@
           <h1>Let's do this!</h1>
         </div>
         <div class="middle-form">
-          <form>
+          <form id="signup">
             <fieldset>
               <div class="row">
                 <div class="cell">
@@ -86,11 +87,16 @@
                 </div>
               </div>
             </fieldset>
+            <span
+              id="passwordError"
+              style="color: red; display: none; font-size: smaller"
+              >* Passwords do not match</span
+            >
           </form>
         </div>
       </div>
       <div class="bottom">
-        <button>Create Account</button>
+        <button type="submit" form="signup">Create Account</button>
         <p>Already have an account? <a href="index.html">Log in</a></p>
       </div>
     </div>

@@ -121,6 +121,19 @@ fieldset {
   flex-direction: column;
 }
 
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
 .cell {
   display: flex;
   flex-direction: column;
